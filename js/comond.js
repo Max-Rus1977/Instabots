@@ -10,36 +10,25 @@ function openMenu() {
   headerTabBox.classList.toggle('_visibl');
 }
 
-/* Input shadow first-screen */
-const firstScreenInput = document.querySelector('.fs-js');
-const wrapperSendEmail = document.querySelector('.se-js');
+/* Input shadow */
+const inputs = document.querySelectorAll('.input-focus-js');
 
-firstScreenInput.addEventListener('focus', addShadow);
-function addShadow() {
-  wrapperSendEmail.classList.add('_box-input-shadow');
-}
-firstScreenInput.addEventListener('blur', removeShadow);
-function removeShadow() {
-  wrapperSendEmail.classList.remove('_box-input-shadow');
+for (let input of inputs) {
+  input.addEventListener('focus', () => {
+    input.closest('.form-shadow-js').classList.add('_box-input-shadow');
+  })
+
+  input.addEventListener('blur', () => {
+    input.closest('.form-shadow-js').classList.remove('_box-input-shadow');
+  })
+
 }
 
-/* Input shadow favorable-price */
-const favorablePriceInput = document.querySelector('.favorable-price-input');
-const favorablePriceSendEmail = document.querySelector('.favorable-price-wrapper-send-email');
-
-favorablePriceInput.addEventListener('focus', addShadowFP);
-function addShadowFP() {
-  favorablePriceSendEmail.classList.add('_box-input-shadow');
-}
-favorablePriceInput.addEventListener('blur', removeShadowFP);
-function removeShadowFP() {
-  favorablePriceSendEmail.classList.remove('_box-input-shadow');
-}
 
 /* Coments animation */
-let comentsCol = document.querySelectorAll('.coments-col');
-let comentsStrucktur = document.querySelector('.coments-strucktur');
-let btnComents = document.querySelector('.btn-coments');
+const comentsCol = document.querySelectorAll('.coments-col');
+const comentsStrucktur = document.querySelector('.coments-strucktur');
+const btnComents = document.querySelector('.btn-coments');
 
 btnComents.onclick = function () {
 
