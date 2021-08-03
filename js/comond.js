@@ -150,3 +150,47 @@ for (let anchor of anchors) {
     })
   })
 }
+
+/* ! ===================================== */
+
+const geniralWrapper = document.querySelector('.geniral-wrapper');
+const boxBtn = document.querySelector('.sticky__box-btn');
+const navTeg = document.getElementsByTagName('nav');
+const div = document.getElementsByClassName('_slick');
+
+boxBtn.addEventListener('click', function () {
+  boxBtn.classList.toggle('_active');
+
+  if (navTeg.length == 1) {
+    const cloneNavTeg = navTeg[0].cloneNode(true);
+    cloneNavTeg.classList.remove('bg-section', 'col-nav');
+    cloneNavTeg.classList.add('_slick');
+    geniralWrapper.prepend(cloneNavTeg);
+  }
+  else {
+    navTeg[0].remove();
+  }
+
+});
+
+/*
+Появление кнопки Меню и Исчезновение меню с кнопки выше 450px 
+*/
+window.addEventListener('scroll', function () {
+
+  let offsetYInPx = pageYOffset;
+  if (offsetYInPx > 450) {
+    boxBtn.classList.add('_visibl');
+  }
+  else {
+    boxBtn.classList.remove('_visibl');
+  }
+
+  if (navTeg.length == 2 && offsetYInPx < 450) {
+    navTeg[0].remove();
+    if (boxBtn.classList.contains('_active'))
+      boxBtn.classList.remove('_active');
+  }
+});
+
+/* ! ===================================== */
