@@ -34,6 +34,13 @@ btnComents.onclick = function () {
 
   comentsStrucktur.classList.toggle('coments-strucktur-js');
   comentsCol.forEach(i => i.classList.toggle("col-efect-js"));
+  if (btnComents.innerText === 'Структурировать отзывы') {
+    btnComents.innerText = 'Разбросать отзывы'
+  }
+  else if (btnComents.innerText === 'Разбросать отзывы') {
+    btnComents.innerText = 'Структурировать отзывы'
+  }
+
 }
 
 /* Acordion */
@@ -108,7 +115,7 @@ openModalUser.onclick = function () {
   modalUhon.classList.add('modal-visibl');
 }
 
-/* Mobail registration */
+/* Modail registration */
 mobailBtnRegistr.addEventListener('click', openModalRegistr);
 function openModalRegistr() {
   modalUhon.classList.add('modal-visibl');
