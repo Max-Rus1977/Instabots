@@ -1,23 +1,15 @@
 @font-face {
     font-family: 'Visuelt Pro';
-    src: url('VisueltPro-Medium.eot');
-    src: local('VisueltPro-Medium'),
-        url('VisueltPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('VisueltPro-Medium.woff2') format('woff2'),
-        url('VisueltPro-Medium.woff') format('woff'),
-        url('VisueltPro-Medium.ttf') format('truetype');
+    src: url('../fonts/VisueltPro/VisueltPro-Medium.eot');
+    src: local('../fonts/VisueltPro/VisueltPro-Medium'), url('../fonts/VisueltPro/VisueltPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/VisueltPro/VisueltPro-Medium.woff2') format('woff2'), url('../fonts/VisueltPro/VisueltPro-Medium.woff') format('woff'), url('../fonts/VisueltPro/VisueltPro-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Visuelt Pro';
-    src: url('VisueltPro-Regular.eot');
-    src: local('VisueltPro-Regular'),
-        url('VisueltPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('VisueltPro-Regular.woff2') format('woff2'),
-        url('VisueltPro-Regular.woff') format('woff'),
-        url('VisueltPro-Regular.ttf') format('truetype');
+    src: url('../fonts/VisueltPro/VisueltPro-Regular.eot');
+    src: local('../fonts/VisueltPro/VisueltPro-Regular'), url('../fonts/VisueltPro/VisueltPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/VisueltPro/VisueltPro-Regular.woff2') format('woff2'), url('../fonts/VisueltPro/VisueltPro-Regular.woff') format('woff'), url('../fonts/VisueltPro/VisueltPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
