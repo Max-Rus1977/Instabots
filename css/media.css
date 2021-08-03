@@ -1,0 +1,686 @@
+@media only screen and (max-width : 1250px) {
+  .favorable-price-title {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width : 1150px) {
+
+  .first-screen h2,
+  .favorable-price-title {
+    font-size: 46px;
+  }
+
+  .wrapper-send-email {
+    width: 377px;
+  }
+
+  .first-screen-input,
+  .btn-send-email {
+    font-size: 14px;
+  }
+
+  .first-screen-input {
+    height: 27px;
+  }
+
+  .btn-send-email {
+    width: 114px;
+  }
+
+  .questions-content-box {
+    margin: 10px 24px;
+  }
+
+  .feedback-btn-data {
+    flex-direction: column;
+  }
+
+  .btn-feedback {
+    width: 143px;
+  }
+
+  .feedback-btn-data p {
+    margin: 6px 0 0 0;
+  }
+
+}
+
+@media only screen and (max-width : 1100px) {
+
+  .header {
+    height: 150px;
+    font-size: 18px;
+  }
+
+  .col-nav {
+    order: 1;
+    width: 100%;
+  }
+
+  .col-logo,
+  .col-btn-registr {
+    width: 50%;
+  }
+
+  .first-screen-text {
+    padding: 40px 0 0 56px;
+  }
+
+  .first-screen-img {
+    margin: 40px 11% 0px auto;
+  }
+
+  .about-us-all-content {
+    padding-right: 24px;
+  }
+
+}
+
+@media only screen and (max-width : 950px) {
+
+  .col-logo {
+    width: 30%;
+  }
+
+  .col-btn-registr {
+    width: 70%;
+  }
+
+  .col-50 {
+    width: 100%;
+  }
+
+  .btn-order-call {
+    margin: 0 auto 60px auto;
+  }
+
+  .wrapper-send-email {
+    margin: 40px 0px 0px 0px;
+  }
+  .first-screen-img {
+    margin: 10px auto 56px auto;
+  } 
+
+  .first-screen-text .wrapper-send-email {
+    margin-left: 0;
+  }
+
+  .first-screen-text {
+    padding: 10px 56px 0 56px;
+    text-align: left;
+  }
+  .first-screen h2,
+  .favorable-price-title {
+    font-size: 56px;
+    max-width: 600px;
+  }
+
+  .wrapper-send-email {
+    width: 465px;
+    margin: 40px auto 0px auto;
+  }
+
+  .first-screen-input,
+  .btn-send-email {
+    font-size: 18px;
+  }
+
+  .first-screen-input {
+    height: auto;
+  }
+
+  .btn-send-email {
+    width: 143px;
+  }
+
+  .scroll-further  {
+    display: none;
+  }
+
+  .first-screen-img {
+    width: 66%;
+    margin: 20px auto 56px auto;
+  }
+
+  .first-screen-img img {
+    display: none;
+  }
+
+  .col-50 .first-screen-950-width {
+    display: block;
+    position: static;
+  }
+
+  .about-us {
+  background-image: url(../img/bg-about-us-mobail.jpg);
+  }
+
+  .col-about-us-img,
+  .about-us-all-content {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+
+  .about-us-img {
+    width: 66%;
+    margin: 40px auto;
+  }
+
+  .about-us-tabs {
+    max-width: 589px;
+    margin: 0 auto;
+  }
+
+  .tab-box {
+    max-height: 360px;
+    height: 360px;
+  }
+
+  .pricing-plans .col-4 {
+    width: 50%;
+  }
+
+  .favorable-price-col-img,
+  .favorable-price-content-col {
+    width: 100%;
+    padding: 0;
+  }
+
+  .favorable-price-col-img {
+    margin-top: 88px;
+  }
+
+  .favorable-price-title {
+    max-width: 600px;
+    margin: 87px auto 0 auto;
+  }
+
+  .favorable-price-content-col .wrapper-send-email {
+    margin: 40px auto 0px auto;
+  }
+
+  .favorable-price-personal-data,
+  .favorable-price-content-col .personal-data {
+    display: block;
+    text-align: center;
+  }
+
+  .coments-col {
+    top: 0;
+    left: 0;
+  }
+
+  .coments-box {
+    max-width: 672px;
+    margin: auto;
+  }
+
+  .btn-coments {
+    display: none;
+  }
+
+  .feedback-col {
+    width: 100%;
+  }
+
+  .feedback-col-img {
+    justify-content: center;
+    order: -1;
+  }
+
+  .feedback-wrapp-img {
+    margin-top: 0;
+  }
+
+  .feedback-slag {
+    margin: 16px auto 0 auto;
+  }
+
+  .feedback-form {
+    text-align: center;
+  }
+
+  .btn-feedback {
+    margin: auto;
+  }
+
+  .feedback-wrapp-input input, 
+  .feedback-wrapp-input textarea {
+    width: 65%;
+  }
+
+}
+
+@media only screen and (max-width : 850px) {
+
+  .advantages-all-content .advantages-col:first-child {
+    margin-top: 0;
+  }
+
+  .advantages-all-content {
+    margin-bottom: 80px;
+  }
+
+  .advantages-col {
+    width: 100%;
+    flex: 1 0 auto; 
+    margin-top: 16px;
+  }
+
+  .advantages-subheade {
+    height: 80px;
+  }
+
+  .advantages-content {
+    margin-top: 16px;
+  }
+
+}
+
+@media only screen and (max-width : 780px) {
+
+  .col-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-p {
+    margin-left: 17px;
+  }
+
+  .burger {
+    width: 50px;
+    height: 26px;
+    margin-left: 50px;
+  }
+
+  .burger-lines {
+    position: relative;
+    width: 50px;
+    height: 3px;
+    background-color: #4754EB;
+    transition: 0.9s;
+  }
+
+  .burger-lines:before,
+  .burger-lines:after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #4754EB;
+  }
+
+  .burger-lines:before {
+    top: 10px;
+    left: 0;
+  }
+
+  .burger-lines:after {
+    top: 20px;
+    left: 0;
+    transform: rotateX(10deg);
+    transition: 0.9s;
+  }
+
+  /* Burger animate */
+  ._burger-animate .burger-lines {
+    width: 40px;
+    top: 3px;
+    transform: rotate(45deg);
+    transition: 0.9s;
+  }
+  ._burger-animate .burger-lines:before {
+    opacity: 0;
+  }
+  ._burger-animate .burger-lines:after {
+    width: 42px;
+    top: 0px;
+    transform: rotate(-90deg);
+    transition: 0.9s;
+  }
+  /* -------------- */
+
+  .header-menu {
+    position: absolute;
+    background-image: url(../img/bg-mobal-menu.jpg);
+    max-width: 720px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 145px;
+    padding: 40px 56px 127px 56px;
+    justify-content: left;
+    font-size: 56px;
+    border-radius: 24px;
+    z-index: -10;
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: 0.8s;
+
+  }
+
+  .header-menu li {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .header-menu li a {
+    color: #1A1A1A;
+  }
+
+  .header-tab-box {
+    position: absolute;
+    top: 612px;
+    left: 71px;
+    font-size: 56px;
+    z-index: -10;
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: 0.3s;
+  }
+
+  .col-about-us-img {
+     padding: 0 56px; 
+  }
+
+  .first-screen-img,
+  .about-us-img,
+  .favorable-price-box-img {
+    width: 83%;
+  }
+
+  .coments-row {
+    padding: 0 8px;
+  }
+
+  .favorable-price-content-col {
+    padding-left: 56px;
+  }
+
+  .favorable-price-title {
+    margin: 87px 0 0 0;
+  }
+
+  .favorable-price-content-col .wrapper-send-email {
+    margin: 40px 0 0 0;
+  }
+
+  .favorable-price-personal-data, 
+  .favorable-price-content-col .personal-data {
+    text-align: left;
+  }
+
+  .feedback-wrapp-img {
+    display: none;
+  }
+
+  .feedback-slag {
+    margin: 16px 0 0 0;
+  }
+
+  .feedback-form {
+    text-align: left; 
+  }
+
+  .feedback-wrapp-input input, 
+  .feedback-wrapp-input textarea {
+    width: 100%;
+  }
+
+  .btn-feedback {
+    margin: 0;
+  }
+
+   ._visibl {
+    z-index: 10;
+    opacity: 1;
+    transform: translate(0%, 0px);
+    transition: 0.8s;
+  }
+
+}
+
+@media only screen and (max-width : 600px) {
+
+  .header {
+    height: 80px;
+  }
+
+  .btn-registr {
+    display: none;
+  }
+
+  .btn-mobail-registr {
+    display: block;
+    margin-right: 19px;
+    background: none;
+  }
+
+  .header-menu {
+    top: 100px;
+    font-size: 40px;
+  }
+
+  .header-tab-box {
+    top: 490px;
+    left: 58px;
+    font-size: 40px;
+  }
+
+  .first-screen h2,
+  .favorable-price-title {
+    font-size: 40px;
+  }
+
+  .wrapper-send-email {
+    max-width: 420px;
+    width: auto;
+  }
+
+  .favorable-price-content-col .wrapper-send-email {
+    margin: 40px 20px 0 0;
+  }
+
+  .footer-row {
+    padding: 24px 0 24px 16px;
+  }
+
+  .btn-ap {
+    margin-right: 16px;
+  }
+
+}
+
+@media only screen and (max-width : 500px) {
+
+  html,body {
+    font-size: 14px;
+  }
+
+  .first-screen h2,
+  .favorable-price-title {
+    max-width: 320px;
+    margin: auto;
+    font-size: 36px;
+  }
+
+  .section-title {
+    padding: 40px 0 0 20px;
+    font-size: 18px;
+  }
+
+  .advantages-subtitle {
+    font-size: 18px;
+  }
+
+  .first-screen-input, 
+  .btn-send-email {
+    font-size: 14px;
+  }
+
+  .geniral-wrapper {
+    margin: 0px auto;
+    padding: 8px 0;
+  }
+
+  .continer {
+    margin: 0 8px;
+  }
+
+  .first-screen-text {
+    padding: 10px 20px 0 20px;
+  }
+
+  .continer .wrapper-send-email {
+    max-width: 320px;
+    width: auto;
+    margin: 40px auto 0px auto;
+  }
+
+  .btn-send-email {
+    width: 120px;
+    height: 40px;
+  }
+
+  .first-screen-text p {
+    max-width: 320px;
+    margin: 16px auto 0 auto;
+  }
+
+  .personal-data {
+    display: block;
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .advantages .col {
+    padding: 0 16px;
+  }
+
+  .advantages-all-content {
+    margin-bottom: 40px;
+  }
+
+  .advantages-subheade {
+    height: 40px;
+  }
+
+  .advantages-subheade img {
+    max-width: 36px;
+  }
+
+  .about-us-subtitle {
+    font-size: 26px;
+  }
+
+  .btn-order-call {
+    max-width: 322px;
+    height: 48px;
+    margin: 0 auto 40px auto;
+    font-size: 14px;
+  }
+
+  .pricing-plans {
+    padding: 0 24px 70px 24px;
+  }
+
+  .coments-row {
+    margin-top: 12px;
+  }
+
+  .coments-col {
+    padding: 10px 0;
+  }
+
+  .coments-wrap-img {
+    max-width: 48px;
+  }
+
+  .coments-subtitl {
+    font-size: 18px;
+  }
+
+  .coments-stars img {
+    height: 16px;
+  }
+
+  .favorable-price {
+    padding-bottom: 40px;
+  }
+
+  .favorable-price-content-col {
+    padding-left: 0;
+  }
+
+  .favorable-price-personal-data {
+    max-width: 320px;
+    margin: 16px auto 0 auto;
+  }
+
+  .questions {
+    padding-bottom: 40px;
+  }
+
+  .questions-label p {
+    font-size: 26px;
+  }
+
+  .close-js {
+    width: 32px;
+    height: 32px;
+  }
+
+  .close-js:before {
+    left: 9.5px;
+    bottom: 9.5px;
+    font-size: 12px;
+  }
+
+  .feedback {
+    padding: 0 20px 40px 20px;
+  }
+
+  .feedback .feedback-title {
+    padding-left: 0;
+    font-size: 26px;
+  }
+
+  .feedback-wrapp-input input,
+  .feedback-wrapp-input textarea {
+    font-size: 14px;
+  }
+
+  .btn-ap {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width : 450px) {
+
+  .header-menu {
+    width: 94%;
+    left: 3%;
+    right: 3%;
+    padding: 40px 20px 127px 20px;
+    font-size: 36px;
+  }
+
+  .header-tab-box {
+    top: 455px;
+    left: 17px;
+    font-size: 36px;
+  }
+
+  .pricing-plans .col-4 {
+    width: 100%;
+    padding: 20px 43px 20px 36px;
+  }
+
+  .btn-ap {
+    width: 150px;
+  }
+
+}

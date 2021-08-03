@@ -1,0 +1,105 @@
+.color-title {
+  color: #1A1A1A;
+}
+
+.blue-color{
+ color: #4754EB;
+}
+
+.white-color {
+ color: #fff;
+}
+
+.ff-medium {
+ font-weight: 500;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.width-100 {
+ width: 100%;
+}
+
+.section-title {
+  padding: 80px 0 0 56px;
+  font-size: 36px;
+  color: #1A1A1A;
+}
+
+.row-top-40 {
+  margin-top: 40px;
+}
+
+.row {
+ display: flex;
+ flex-wrap: wrap;
+ flex-shrink: 0;
+ width: 100%;
+ max-width: 100%;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-logo {
+  flex: 0 0 auto;
+  width: 17%;
+}
+
+.col-nav {
+ flex: 1 0 auto;
+}
+
+.col-btn-registr {
+  flex: 0 0 auto;
+  min-width: 27%;
+}
+
+.col-50 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-4 {
+ flex: 0 0 auto;
+ width: 25%;
+ padding: 20px 10px 20px 24px;
+}
+
+.text-centr {
+  text-align: center;
+}
+
+.df-al-centr {
+ display: flex;
+ align-items: center;
+}
+
+.df-ju-centr {
+ display: flex;
+ justify-content: center;
+}
+
+.df-al-ju-centr {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.stretching {
+  align-self: stretch;
+}
+
+.bg-section {
+ background-repeat:no-repeat;
+ background-position: center center;
+ background-size: cover;
+}

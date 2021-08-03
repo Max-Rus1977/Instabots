@@ -1,0 +1,16 @@
+
+
+color: #4754EB;
+color: #1A1A1A;
+color: #808080;
+color: #ffffff;
+
+header 48 + 15 +15 = 78px
+
+logo 56 + 56 + 97
+nav 501
+btn 293 ots16
+
+1392 \ 720
+
+pad 56 
