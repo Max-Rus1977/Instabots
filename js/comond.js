@@ -137,9 +137,18 @@ colosePhon.onclick = function () {
   modalPhon.classList.remove('modal-visibl');
 }
 
+/* Tarif plans */
+const openModalPlans = document.querySelectorAll('.open-modal-plans');
+
+for (let onePlan of openModalPlans) {
+  onePlan.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    modalPhon.classList.add('modal-visibl');
+  })
+}
 
 /* Sticky menu */
-
 const geniralWrapper = document.querySelector('.geniral-wrapper');
 const boxBtn = document.querySelector('.sticky__box-btn');
 const navTeg = document.getElementsByTagName('nav');
@@ -179,7 +188,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
-/* Scroll menu */
+/* Smooth Scroll menu */
 
 const anchors = document.querySelectorAll('a[href*="#id"]');
 
@@ -195,7 +204,6 @@ for (let anchor of anchors) {
 }
 
 boxBtn.addEventListener('click', () => {
-
   if (navTeg.length == 2) {
     const anchors2 = document.querySelectorAll('a[href*="#id"]');
 
@@ -213,8 +221,64 @@ boxBtn.addEventListener('click', () => {
 
 })
 
+/* Forms */
+
+const formPhon = document.querySelector('#id-form-phon');
+
+formPhon.addEventListener('submit', formSend)
+
+async function formSend(event) {
+  event.preventDefault();
+
+  let error = formValidate(formPhon);
+  let formData = new FormData(formPhon);
+
+  if (error === 0) {
+    formPhon.classList.add('_sending-js')
+    setTimeout(removeSending, 3000);
+    setTimeout(addVisblThanks, 3500);
+
+  }
+  else {
+    alert('Заполните оязательные поля!')
+  }
+
+}
+
+const modalThanks = document.querySelector('.modal-thanks');
+
+function removeSending() {
+  formPhon.classList.remove('_sending-js');
+}
+
+function addVisblThanks() {
+  modalThanks.classList.add('modal-visibl');
+}
+
+function formValidate(formPhon) {
+  let error = 0;
+  const formReq = document.querySelectorAll('._req-js');
+
+  for (let inputReq of formReq) {
+    inputRemoveError(inputReq);
+    if (inputReq.value === '') {
+      inputAddError(inputReq)
+      error++;
+      console.log(error);
 
 
+    }
+  }
+  return error;
+}
+
+function inputAddError(inputReq) {
+  inputReq.classList.add('_error-js')
+}
+
+function inputRemoveError(inputReq) {
+  inputReq.classList.remove('_error-js')
+}
 
 
 
