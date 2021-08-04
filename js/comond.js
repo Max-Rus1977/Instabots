@@ -180,26 +180,26 @@ window.addEventListener('scroll', function () {
 });
 
 /* Scroll menu */
-boxBtn.addEventListener('click', () => {
-  if (navTeg.length == 1) {
-    const anchors = document.querySelectorAll('a[href*="#id"]');
 
-    for (let anchor of anchors) {
-      anchor.addEventListener('click', function (eveniet) {
-        eveniet.preventDefault();
-        const blockId = anchor.getAttribute('href').substr(1);
-        document.getElementById(blockId).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        })
-      })
-    }
-  }
-  else if (navTeg.length == 2) {
+const anchors = document.querySelectorAll('a[href*="#id"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (eveniet) {
+    eveniet.preventDefault();
+    const blockId = anchor.getAttribute('href').substr(1);
+    document.getElementById(blockId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  })
+}
+
+boxBtn.addEventListener('click', () => {
+
+  if (navTeg.length == 2) {
     const anchors2 = document.querySelectorAll('a[href*="#id"]');
 
     for (let anchor2 of anchors2) {
-
       anchor2.addEventListener('click', function (eveniet) {
         eveniet.preventDefault();
         const blockId = anchor2.getAttribute('href').substr(1);
@@ -212,8 +212,6 @@ boxBtn.addEventListener('click', () => {
   }
 
 })
-
-
 
 
 
