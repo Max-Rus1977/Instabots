@@ -294,12 +294,17 @@ function formValidate(thisForm) {
 
     if (formInput.name === 'email') {
       inputRemoveError(formInput);
-      inputClosestRemoveError(formInput);
+
+      if (formInput.classList.contains('one-email-js')) {
+        inputClosestRemoveError(formInput);
+      }
 
       if (!regExpEmail.test(formInput.value) || formInput.value === '') {
         inputAddError(formInput);
         error++;
+
         if (formInput.classList.contains('one-email-js')) {
+          inputRemoveError(formInput);
           inputClosestAddError(formInput);
         }
       }

@@ -1519,7 +1519,7 @@ input:focus, textarea:focus {
   transition: 0.8s;
 }
 
-.wrapper-send-email._error-js, .modal-wrap-input ._error-js {
+.wrapper-send-email._error-js, .modal-wrap-input ._error-js, ._error-js {
   box-shadow: 0 0 15px red;
 }
 
