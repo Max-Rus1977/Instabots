@@ -1423,12 +1423,12 @@ body {
   box-shadow: 1px 1px 20px 12px rgb(180 159 220 / 21%);
 }
 
-.modal-form {
+.form-img-loading {
   position: relative;
   text-align: center;
 }
 
-.modal-form:before {
+.form-img-loading:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -1445,7 +1445,7 @@ body {
   z-index: -10;
 }
 
-.modal-form._sending-js:before {
+.form-img-loading._sending-js:before {
   opacity: 1;
   visibility: visible;
   z-index: 10;
@@ -1519,7 +1519,7 @@ input:focus, textarea:focus {
   transition: 0.8s;
 }
 
-.modal-wrap-input ._error-js {
+.wrapper-send-email._error-js, .modal-wrap-input ._error-js {
   box-shadow: 0 0 15px red;
 }
 

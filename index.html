@@ -57,8 +57,8 @@
             <div class="wrapp-gen-title _anim-items">
               <h2 class="color-title gen-title">Высокий уровень вовлечения представителей</h2>
             </div>
-            <form action="#" class="wrapper-send-email form-shadow-js">
-              <input class="input-focus-js first-screen-input none-shadow" type="text" placeholder="Введите свой e-mail">
+            <form action="#" class="wrapper-send-email form-img-loading form-shadow-js">
+              <input class="input-focus-js one-email-js first-screen-input none-shadow" name="email" type="text" placeholder="Введите свой e-mail">
               <button class="btn-send-email">Отправить</button>
             </form>
             <p>Нажимая на кнопку вы соглашаетесь на обработку</p>
@@ -287,8 +287,8 @@
               <div class="wpapp-section-title _anim-items _anim-no-hide">
                 <h3 class="favorable-price-title color-title">Получите самую выгодную цену на планете</h3>
               </div>
-              <form action="#" class="wrapper-send-email favorable-price-wrapper-send-email form-shadow-js">
-                <input class="input-focus-js first-screen-input none-shadow" type="text" placeholder="Введите свой e-mail">
+              <form action="#" class="wrapper-send-email favorable-price-wrapper-send-email form-img-loading form-shadow-js">
+                <input class="input-focus-js one-email-js first-screen-input none-shadow" name="email" type="text" placeholder="Введите свой e-mail">
                 <button class="btn-send-email btn-favorable-price">Отправить</button>
               </form>
               <p class="favorable-price-personal-data">Нажимая на кнопку вы соглашаетесь на обработку</p>
@@ -346,7 +346,7 @@
           <div class="row">
             <div class="feedback-col">
               <p class="feedback-slag">Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас целевой аудитории за месяц с минимальными усилиями с вашей стороны</p>
-              <form class="feedback-form"  action="#">
+              <form class="feedback-form form-img-loading"  action="#">
                 <div class="feedback-wrapp-input">
                   <input type="text" placeholder="Введите свой e-mail">
                 </div>
@@ -398,12 +398,12 @@
       </div>
       <div class="modal-wrepper">
         <p class="title-modal">Оставьте номер своего телефона и мы с вами свяжемся через несколько минут.</p>
-        <form id="id-form-phon" class="modal-form" action="">
+        <form class="modal-form form-img-loading" action="">
           <div class="modal-wrap-input">
-            <input class="_req-js" type="text" placeholder="Ваше имя*">
+            <input type="text" name="userName" placeholder="Ваше имя*">
           </div>
           <div class="modal-wrap-input">
-            <input class="_req-js" type="number" placeholder="Ваш телефон*">
+            <input class="tel" type="tel" name="phonNumber" placeholder="Ваш телефон*">
           </div>
           <div class="modal-wrap-input">
             <textarea placeholder="Ваши пожелания (не объязательно)"></textarea>
@@ -427,7 +427,7 @@
       <div class="modal-wrepper">
         <h4 class="text-centr">Здравствуйте</h4>
         <p class="title-modal">Для регистрации уажите свой e-mail и придумате пароль.</p>
-        <form class="modal-form" action="">
+        <form id="id-form-registret" class="modal-form text-centr" action="">
           <div class="modal-wrap-input">
             <input type="text" placeholder="Ваш e-mail">
           </div>
@@ -470,7 +470,6 @@
       </div>
     </div>
   </div>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
  
   <script src="js/comond.js"></script>
  

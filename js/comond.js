@@ -222,63 +222,108 @@ boxBtn.addEventListener('click', () => {
 })
 
 /* Forms */
+const allForms = document.querySelectorAll('form');
 
-const formPhon = document.querySelector('#id-form-phon');
+for (let thisForm of allForms) {
+  if (thisForm.id !== 'id-form-registret') {
+    thisForm.addEventListener('submit', formSend)
+  }
+}
 
-formPhon.addEventListener('submit', formSend)
-
-async function formSend(event) {
+function formSend(event) {
   event.preventDefault();
+  const focusForm = event.target;
 
-  let error = formValidate(formPhon);
-  let formData = new FormData(formPhon);
+  let error = formValidate(focusForm);
 
   if (error === 0) {
-    formPhon.classList.add('_sending-js')
-    setTimeout(removeSending, 3000);
-    setTimeout(addVisblThanks, 3500);
+    focusForm.classList.add('_sending-js');
+    setTimeout(removeSending, 1000);
+    setTimeout(focusForm.reset(), 1000);
+    setTimeout(addVisblThanks, 1100);
+  }
 
+  else if (error === 1 && focusForm.length === 2) {
+    alert('Введён некоректный email');
   }
   else {
-    alert('Заполните оязательные поля!')
+    alert('Заполните оязательные поля!');
   }
 
+  function removeSending() {
+    focusForm.classList.remove('_sending-js');
+  }
 }
 
 const modalThanks = document.querySelector('.modal-thanks');
-
-function removeSending() {
-  formPhon.classList.remove('_sending-js');
-}
-
 function addVisblThanks() {
   modalThanks.classList.add('modal-visibl');
 }
 
-function formValidate(formPhon) {
+const coloseModalThanks = document.querySelector('.wrap-closes-thanks');
+coloseModalThanks.addEventListener('click', removeVisblThanks);
+function removeVisblThanks() {
+  modalThanks.classList.remove('modal-visibl');
+}
+
+const regExpName = /^[a-z0-9_-]{3,16}$/;
+const regExpPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+const regExpEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+
+function formValidate(thisForm) {
   let error = 0;
-  const formReq = document.querySelectorAll('._req-js');
+  const formInputs = thisForm.querySelectorAll('input');
 
-  for (let inputReq of formReq) {
-    inputRemoveError(inputReq);
-    if (inputReq.value === '') {
-      inputAddError(inputReq)
-      error++;
-      console.log(error);
+  for (let formInput of formInputs) {
+    if (formInput.name === 'userName') {
+      inputRemoveError(formInput);
 
+      if (regExpName.test(formInput.value) || formInput.value === '') {
+        inputAddError(formInput);
+        error++;
+      }
+    }
+    if (formInput.name === 'phonNumber') {
+      inputRemoveError(formInput);
+
+      if (formInput.value.length !== 16 || formInput.value === '') {
+        inputAddError(formInput);
+        error++;
+      }
+    }
+
+    if (formInput.name === 'email') {
+      inputRemoveError(formInput);
+      inputClosestRemoveError(formInput);
+
+      if (!regExpEmail.test(formInput.value) || formInput.value === '') {
+        inputAddError(formInput);
+        error++;
+        if (formInput.classList.contains('one-email-js')) {
+          inputClosestAddError(formInput);
+        }
+      }
 
     }
   }
   return error;
 }
 
-function inputAddError(inputReq) {
-  inputReq.classList.add('_error-js')
+function inputAddError(formInput) {
+  formInput.classList.add('_error-js')
 }
 
-function inputRemoveError(inputReq) {
-  inputReq.classList.remove('_error-js')
+function inputRemoveError(formInput) {
+  formInput.classList.remove('_error-js')
+}
+
+function inputClosestAddError(formInput) {
+  formInput.closest('.wrapper-send-email').classList.add('_error-js')
+}
+
+function inputClosestRemoveError(formInput) {
+  formInput.closest('.wrapper-send-email').classList.remove('_error-js')
 }
 
 
-
+/* Mask phone */
