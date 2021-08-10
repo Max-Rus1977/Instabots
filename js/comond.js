@@ -149,10 +149,10 @@ for (let onePlan of openModalPlans) {
 }
 
 /* Sticky menu */
-const geniralWrapper = document.querySelector('.geniral-wrapper');
+const headerTag = document.querySelector('#id-header');
 const boxBtn = document.querySelector('.sticky__box-btn');
 const navTeg = document.getElementsByTagName('nav');
-const div = document.getElementsByClassName('_slick');
+//const div = document.getElementsByClassName('_slick');
 
 boxBtn.addEventListener('click', function () {
   boxBtn.classList.toggle('_active');
@@ -161,7 +161,7 @@ boxBtn.addEventListener('click', function () {
     const cloneNavTeg = navTeg[0].cloneNode(true);
     cloneNavTeg.classList.remove('bg-section', 'col-nav');
     cloneNavTeg.classList.add('_slick');
-    geniralWrapper.prepend(cloneNavTeg);
+    headerTag.prepend(cloneNavTeg);
   }
   else {
     navTeg[0].remove();
@@ -169,7 +169,7 @@ boxBtn.addEventListener('click', function () {
 
 });
 /*
-Появление кнопки Меню и Исчезновение меню с кнопки выше 450px 
+Появление кнопки Меню и Исчезновение меню с кнопкой выше 450px 
 */
 window.addEventListener('scroll', function () {
 

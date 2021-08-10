@@ -135,6 +135,7 @@ body {
 /* Header */
 
 .header {
+  position: relative;
   height: 80px;
 }
 
@@ -156,6 +157,10 @@ body {
 .header-menu li {
   display: inline-block;
   margin-left: 20px;
+}
+
+.header-menu li:first-child {
+  margin-left: 0;
 }
 
 .header-menu li a {
@@ -237,7 +242,9 @@ body {
   align-items: center;
   position: fixed;
   width: 100px;
-  margin: -11px 61%;
+  height: 60px;
+  top: -14px;
+  right: 33px;
   background: none;
   cursor: pointer;
   opacity: 0;
@@ -286,13 +293,14 @@ body {
 
 .sticky__box-btn._active .sticky__line {
   width: 35px;
+  top: 10px;
   transform: rotate(45deg);
 }
 
 .sticky__box-btn._active .sticky__line:before {
   width: 35px;
   transform: rotate(90deg);
-  top: 0;
+  top: 1px;
 }
 
 .sticky__box-btn._active .sticky__line:after {
