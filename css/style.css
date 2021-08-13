@@ -220,7 +220,7 @@ body {
   transition: 0.5s;
 }
 
-.btn-registr p {
+.btn-registr span {
   font-size: 18px;
 }
 
@@ -229,7 +229,7 @@ body {
   box-shadow: 1px 1px 1px 2px #757575;
 }
 
-.btn-registr:hover p {
+.btn-registr:hover span {
   color: #4754EB;
 }
 
