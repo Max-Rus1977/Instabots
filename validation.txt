@@ -1,0 +1,8 @@
+Validation CSS:  
+https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmax-rus1977.github.io%2FInstabots%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=ru
+
+Validation HTML:
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fmax-rus1977.github.io%2FInstabots%2F
+
+PageSpeed test:
+https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fmax-rus1977.github.io%2FInstabots%2F&tab=desktop

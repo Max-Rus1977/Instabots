@@ -2,8 +2,3 @@
 
  https://max-rus1977.github.io/Instabots/
 
-validation CSS  
-https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmax-rus1977.github.io%2FInstabots%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=ru
-
-validation HTML
- https://validator.w3.org/nu/?doc=https%3A%2F%2Fmax-rus1977.github.io%2FInstabots%2F
